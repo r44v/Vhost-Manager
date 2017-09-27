@@ -10,7 +10,7 @@ This script requests admin rights because it rewrites your hosts file
 
 ## Why?
 
-Initially I used a similar script written in PHP and I combined it with python to actually write the changes. I decided the configuration was too much of a hassle so I rewrote it in python. It works great for Laravel projects because each new project needs its own vhost.
+Intially I used a simular script writting in php and I combined it with python to actually write the changes. I deciced the configuration whas to much of a hassle so I rewrote it in python. It works great for laravel projects because each new project needs its own vhost.
 
 ## Initial configuration
 
@@ -33,7 +33,7 @@ if the locations are different please change the 'vhost_file' and 'hosts_file' v
 
 ## Adding vhosts
 
-Edit the following lines in the vhost.py file to add a new vhost location and a local url.
+Edit the following lines in the vhost.py file to add an new vhost location and a local url.
 
 ```python
 data = [
@@ -47,8 +47,6 @@ data = [
     },
         ]
 ```
-
-I suggest keeping the localhost in this list because adding vhosts in xampp breaks the default localhost settings
 
 side note: *this script does not create the specified path it only points to the location*
 
